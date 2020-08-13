@@ -34,7 +34,7 @@ describe('Testing for App', () => {
             .simulate('submit', { preventDefautl: prevent })
         wrapper
             .find('button')
-            .at(1)
+            .at(2)
             .simulate('click')
 
         const [a, ...rest] = reducer.mock.calls;
