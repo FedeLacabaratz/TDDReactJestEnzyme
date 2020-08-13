@@ -39,7 +39,7 @@ export function TodoForm({ addTodo }) {
   );
 }
 
-function App() {
+export const useTodos = () => {
   const [todos, setTodos] = useState([
     {
       text: "Todo 1",
@@ -71,6 +71,12 @@ function App() {
     newTodos.splice(index, 1);
     setTodos(newTodos);
   };
+
+  return { todos, addTodo, completeTodo, removeTodo }
+}
+
+function App() {
+  const { todos, addTodo, completeTodo, removeTodo } = useTodos();
 
   return (
     <div className="app">
