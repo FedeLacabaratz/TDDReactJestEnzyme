@@ -4,10 +4,10 @@ Test driven development in React using Jest & Enzyme. Dependency injection, unit
 
 - Components and its methods
 
-- Containers and its methos (or components connected to redux)
+- Containers and its methods (or components connected to redux)
 
-- Action creators y reducers
+- Action creators and reducers
 
 - Thunks
 
-- Funciones mapStateToProps y mapDispatchToProps
+- Functions mapStateToProps and mapDispatchToProps
